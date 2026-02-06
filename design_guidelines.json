@@ -1,0 +1,153 @@
+{
+  "identity": {
+    "persona": "E1",
+    "role": "Creative Designer (Top 1%)",
+    "mission": "Build an AI-Powered Climate Risk & Sustainability Platform that blends scientific precision with sci-fi HUD aesthetics.",
+    "principles": [
+      "Fusion over Imitation: Mix Climate Science + Cyberpunk HUD.",
+      "Emotion First: Urgency (Red) vs. Hope (Neon Green).",
+      "Content is King: Data must be legible but beautiful.",
+      "Zoom In: Focus on specific regions/risks.",
+      "Negative Space: Don't clutter the map; use collapsible panels."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Rajdhani, sans-serif",
+      "weights": ["600", "700"],
+      "usage": "All section titles, dashboard widget headers, big metrics.",
+      "letter_spacing": "tracking-wide"
+    },
+    "body": {
+      "font_family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, data tables, small labels.",
+      "letter_spacing": "tracking-normal"
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "weights": ["400"],
+      "usage": "Coordinates, raw data values, timestamps."
+    },
+    "installation": "Import 'Rajdhani' and 'JetBrains Mono' from Google Fonts in index.css."
+  },
+  "colors": {
+    "theme": "Eco-Cyberpunk (Dark Mode Only)",
+    "palette": {
+      "background": "#02040A",
+      "foreground": "#E2E8F0",
+      "card": "rgba(13, 18, 31, 0.7)",
+      "card_foreground": "#FFFFFF",
+      "popover": "#0D121F",
+      "popover_foreground": "#FFFFFF",
+      "primary": "#00FF94",
+      "primary_foreground": "#000000",
+      "secondary": "#00E0FF",
+      "secondary_foreground": "#000000",
+      "muted": "#1E293B",
+      "muted_foreground": "#94A3B8",
+      "accent": "#1E293B",
+      "accent_foreground": "#00FF94",
+      "destructive": "#FF2E2E",
+      "destructive_foreground": "#FFFFFF",
+      "border": "rgba(0, 224, 255, 0.2)",
+      "input": "rgba(255, 255, 255, 0.1)",
+      "ring": "#00FF94"
+    },
+    "gradients": {
+      "risk_high": "linear-gradient(135deg, #FF2E2E 0%, #990000 100%)",
+      "safe_zone": "linear-gradient(135deg, #00FF94 0%, #008F53 100%)",
+      "glass_surface": "linear-gradient(180deg, rgba(13, 18, 31, 0.8) 0%, rgba(13, 18, 31, 0.4) 100%)"
+    }
+  },
+  "layout": {
+    "spacing_system": {
+      "base": "4px",
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8"
+    },
+    "grid_strategy": "Bento Grid Mode B (High Density)",
+    "dashboard_structure": {
+      "columns": "grid-cols-1 md:grid-cols-12",
+      "gap": "gap-4",
+      "widgets": {
+        "map_panel": "col-span-full lg:col-span-8 row-span-4",
+        "risk_panel": "col-span-full lg:col-span-4 row-span-2",
+        "chat_panel": "col-span-full lg:col-span-4 row-span-2",
+        "timeline_control": "col-span-full h-24"
+      }
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "Glassmorphism",
+      "classes": "bg-[#0D121F]/70 backdrop-blur-xl border border-[#00E0FF]/20 shadow-[0_0_15px_rgba(0,224,255,0.1)] rounded-xl"
+    },
+    "buttons": {
+      "primary": "bg-[#00FF94] text-black hover:bg-[#00FF94]/80 font-bold uppercase tracking-wider rounded-none skew-x-[-10deg]",
+      "secondary": "border border-[#00E0FF] text-[#00E0FF] hover:bg-[#00E0FF]/10 uppercase tracking-wider rounded-none"
+    },
+    "inputs": {
+      "style": "bg-black/50 border border-white/10 focus:border-[#00FF94] text-white rounded-md"
+    },
+    "map_overlays": {
+      "style": "Floating HUD panels with semi-transparent backgrounds and neon borders."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Add a subtle 'scanline' or 'grid' overlay to the background using CSS patterns.",
+    "borders": "Use 'Tracing Beam' effect for active risk alerts.",
+    "icons": "Phosphor Icons (Duotone) or Lucide React. Use 'Thin' or 'Light' weights for a technical look.",
+    "animations": {
+      "library": "framer-motion",
+      "transitions": "type: 'spring', stiffness: 300, damping: 30",
+      "hover": "scale: 1.02, brightness: 1.2"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+        "description": "Satellite view of Earth from space, dark and sci-fi."
+      },
+      {
+        "category": "flood_risk",
+        "url": "https://images.unsplash.com/photo-1706737373665-6ff5e08347e5",
+        "description": "Dark moody aerial view of flood waters."
+      },
+      {
+        "category": "drought_risk",
+        "url": "https://images.unsplash.com/photo-1752419258309-019b9ef57c31",
+        "description": "Cracked earth desert landscape under storm."
+      },
+      {
+        "category": "sustainability",
+        "url": "https://images.unsplash.com/photo-1639422026989-c17351e8c71e",
+        "description": "Wind turbines at night, green energy concept."
+      }
+    ]
+  },
+  "libraries": {
+    "maps": "Leaflet (react-leaflet)",
+    "charts": "Recharts (customized with neon strokes and dark backgrounds)",
+    "motion": "Framer Motion",
+    "ui": "Shadcn/UI (heavily customized colors)",
+    "icons": "lucide-react"
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add @import for Rajdhani and JetBrains Mono in index.css immediately.",
+    "2. OVERRIDE THEME: Replace all CSS variables in index.css with the 'Eco-Cyberpunk' palette provided above.",
+    "3. MAP FIRST: The Dashboard must be map-centric. The map should take up 60-70% of the screen real estate.",
+    "4. HUD UI: Build the 'Risk Panel' and 'Chat Panel' as floating glass overlays on top of the map or in a tight grid around it.",
+    "5. VOICE AI: Implement the Web Speech API with a visual 'Audio Waveform' visualizer when active.",
+    "6. AUTH: Create a 'Holographic' login form with the satellite background.",
+    "7. SCENARIO SIMULATOR: Use sliders that change the map layer opacity or color intensity instantly."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic centered layouts. Use asymmetry.",
+    "Dark Mode Only: Do not implement a light mode toggle. This is a mission-critical dashboard.",
+    "Micro-Interactions: Every button hover should feel 'electric'.",
+    "Data-Test-IDs: Add data-testid to all interactive elements."
+  ]
+}
